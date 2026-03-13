@@ -18,8 +18,8 @@ const findKthLargest = (nums, k) => {
 
     const result = []
 
-    for (let i = 0; i < nums.length; i++) { // Loop through each element in the original array
-        let inserted = false // Flag to check if the number has been inserted
+    for (let i = 0; i < nums.length; i++) {
+        let inserted = false
         for (let j = 0; j < result.length; j++) {
             if (nums[i] === result[j]) { // Check for duplicates
                 inserted = true
